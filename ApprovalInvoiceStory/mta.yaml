@@ -1,0 +1,17 @@
+_schema-version: "3.2"
+ID: ApprovalInvoiceStory
+version: 0.0.1
+modules:
+  - name: ApprovalInvoiceStory
+    type: com.sap.application.content
+    path: ApprovalInvoiceStory
+    requires:
+      - name: workflow_mta
+        parameters:
+          content-target: true
+resources:
+  - name: workflow_mta
+    parameters:
+      service-plan: standard
+      service: workflow
+    type: org.cloudfoundry.managed-service
