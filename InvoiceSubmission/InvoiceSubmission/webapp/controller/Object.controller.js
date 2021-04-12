@@ -71,7 +71,7 @@ sap.ui.define([
             sap.ui.core.BusyIndicator.show(0);
             $.ajax({
                 type: "GET",
-                url: "/ProcurementService/browse/PurchaseOrder?$filter=Status eq 'Pending'&$expand=To_PurchaseOrderItems($orderby=PurchaseOrderItem asc;$filter=Status eq 'Pending')",
+                url: "/ProcurementService/browse/PurchaseOrder?$filter=Status eq 'Pending' and Supplier eq 'USSU-VSF63'&$expand=To_PurchaseOrderItems($orderby=PurchaseOrderItem asc;$filter=Status eq 'Pending')",
                 cache: false,
                 dataType: "json",
                 async: false,
