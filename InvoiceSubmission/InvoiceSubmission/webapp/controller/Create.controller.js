@@ -165,7 +165,7 @@ sap.ui.define([
 
 			});
 
-			xhr.open("POST", "/doxDest/document/jobs");
+			xhr.open("POST", "/nsInvoiceSubmission/doxDest/document/jobs");
             xhr.send(data);
         },
         waitComplete : function(requestID,waitingCalls){
@@ -176,7 +176,7 @@ sap.ui.define([
 
 			$.ajax({
 				type: "GET",
-				url: "/doxDest/document/jobs/"+requestID,
+				url: "/nsInvoiceSubmission/doxDest/document/jobs/"+requestID,
 				cache: false,
 				dataType: "json",
 				async: false,
@@ -404,12 +404,12 @@ sap.ui.define([
 
             if(counterCalls == 0)
             {
-                url = "/ProcurementService/browse/Invoice";
+                url = "/nsInvoiceSubmission/ProcurementService/browse/Invoice";
                 payload = header;
             }
             else
             {
-                url = "/ProcurementService/browse/InvoiceItems";
+                url = "/nsInvoiceSubmission/ProcurementService/browse/InvoiceItems";
                 payload = items[counterCalls-1];
                 payload.DocNumber_DocNumber = finalDocNumber;
                 
@@ -495,7 +495,7 @@ sap.ui.define([
 
                 });
 
-                xhr.open("POST", "/DocManagement/browser/<<Your Repository ID>>/root/Invoices");
+                xhr.open("POST", "/nsInvoiceSubmission/DocManagement/browser/<<Your Repository ID>>/root/Invoices");
                 xhr.send(data);
             },   
 		optionalStepActivation: function () {
