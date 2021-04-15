@@ -71,7 +71,7 @@ sap.ui.define([
             sap.ui.core.BusyIndicator.show(0);
             $.ajax({
                 type: "GET",
-                url: "/ProcurementService/browse/PurchaseOrder?$filter=Status eq 'Pending' and Supplier eq 'USSU-VSF63'&$expand=To_PurchaseOrderItems($orderby=PurchaseOrderItem asc;$filter=Status eq 'Pending')",
+                url: "/nsInvoiceSubmission/ProcurementService/browse/PurchaseOrder?$filter=Status eq 'Pending' and Supplier eq 'USSU-VSF63'&$expand=To_PurchaseOrderItems($orderby=PurchaseOrderItem asc;$filter=Status eq 'Pending')",
                 cache: false,
                 dataType: "json",
                 async: false,
@@ -120,7 +120,7 @@ sap.ui.define([
                         });
                 $.ajax({
                     type: "POST",
-                    url: "/BUSINESS_RULES/rules-service/rest/v2/workingset-rule-services",
+                    url: "/nsInvoiceSubmission/BUSINESS_RULES/rules-service/rest/v2/workingset-rule-services",
                     cache: false,
                     dataType: "json",
                     headers: {"Content-Type":"application/json"},
@@ -331,7 +331,7 @@ sap.ui.define([
             
             $.ajax({
                     type: "POST",
-                    url: "/workflowService/workflow-service/rest/v1/workflow-instances",
+                    url: "/nsInvoiceSubmission/workflowService/workflow-service/rest/v1/workflow-instances",
                     cache: false,
                     dataType: "json",
                     headers: {"Content-Type":"application/json"},
