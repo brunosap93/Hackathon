@@ -7,7 +7,7 @@
         <headerContent>
 				<Bar>
 					<contentRight>
-						<Button text="Submit" press="handleWizardSubmit" type="Emphasized"></Button>
+						<Button text="Create" press="handleWizardSubmit" type="Emphasized"></Button>
 						<Button text="Cancel" press="handleWizardCancel" type="Reject"></Button>
 					</contentRight>
 				</Bar>
