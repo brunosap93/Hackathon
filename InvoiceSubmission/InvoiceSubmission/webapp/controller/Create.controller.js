@@ -495,7 +495,7 @@ sap.ui.define([
 
                 });
 
-                xhr.open("POST", "/DocManagement/browser/8d04025a-aa0b-4e63-a271-8bfee48dad5e/root/Invoices");
+                xhr.open("POST", "/DocManagement/browser/<<Your Repository ID>>/root/Invoices");
                 xhr.send(data);
             },   
 		optionalStepActivation: function () {
