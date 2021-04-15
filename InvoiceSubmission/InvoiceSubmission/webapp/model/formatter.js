@@ -34,7 +34,7 @@ sap.ui.define([] , function () {
 		},
         pdfURL: function (value) {
             
-                return "/DocManagement/browser/<<Your Repository ID>>/root/Invoices/"+value+".pdf";
+                return "/nsInvoiceSubmission/DocManagement/browser/<<Your Repository ID>>/root/Invoices/"+value+".pdf";
 		}
 
 	};
